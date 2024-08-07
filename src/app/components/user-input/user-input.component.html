@@ -1,0 +1,17 @@
+<div>
+  <form>
+    <mat-form-field class="small-height-input" style="padding: 10px;">
+      <mat-label>Category</mat-label>
+      <mat-select required [(value)]="selectedCategory">
+        @for(category of categories; track category){
+        <mat-option [value]="category">{{ category }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+    <p>
+      <label>Amount</label>
+      <input type="number" />
+    </p>
+  </form>
+  <p>{{ selectedCategory }}</p>
+</div>
