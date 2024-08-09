@@ -1,6 +1,6 @@
-<div>
+<!-- <div>
   <form>
-    <mat-form-field class="small-height-input" style="padding: 10px;">
+    <mat-form-field>
       <mat-label>Category</mat-label>
       <mat-select required [(value)]="selectedCategory">
         @for(category of categories; track category){
@@ -14,4 +14,44 @@
     </p>
   </form>
   <p>{{ selectedCategory }}</p>
+</div> -->
+<div>
+  <form>
+    <div class="form first-row">
+      <p>
+        <label>Date</label><br />
+        <input 
+          type="date" 
+          id="date"
+        />
+      </p>
+      <p>
+        <label>Category</label><br />
+        <select id="category">
+          @for(category of categories; track category){
+            <option>{{ category }}</option>
+          }
+        </select>
+      </p>
+    </div>
+    <div class="form">
+      <p>
+        <label>Amount</label><br />
+        <input 
+          type="number" 
+          id="amount"
+        />
+      </p>
+    </div>
+    <div class="form decription">
+      <p>
+        <label>Description</label><br />
+        <textarea 
+          name="request" 
+          id="description" 
+          rows="3" 
+        ></textarea>
+      </p>
+    </div>
+  </form>
 </div>
