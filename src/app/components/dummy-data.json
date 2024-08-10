@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly dfhfuhfufhsfuufgusfudsgfusdfusdgfudsgfudsgfusdgfusdg"
+    },
+    {
+        "id":2,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly"
+    },
+    {
+        "id":3,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly"
+    },
+    {
+        "id":4,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly"
+    },
+    {
+        "id":5,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly"
+    },
+    {
+        "id":6,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly"
+    },
+    {
+        "id":7,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly"
+    },
+    {
+        "id":8,
+        "date": "10-08-2024",
+        "category": "Food",
+        "amount": 500,
+        "description": "Breakfast-idly"
+    }
+]

@@ -1,20 +1,3 @@
-<!-- <div>
-  <form>
-    <mat-form-field>
-      <mat-label>Category</mat-label>
-      <mat-select required [(value)]="selectedCategory">
-        @for(category of categories; track category){
-        <mat-option [value]="category">{{ category }}</mat-option>
-        }
-      </mat-select>
-    </mat-form-field>
-    <p>
-      <label>Amount</label>
-      <input type="number" />
-    </p>
-  </form>
-  <p>{{ selectedCategory }}</p>
-</div> -->
 <div>
   <form>
     <div class="form first-row">
@@ -23,11 +6,15 @@
         <input 
           type="date" 
           id="date"
+          [(ngModel)]="transactionDate"
         />
       </p>
       <p>
         <label>Category</label><br />
-        <select id="category">
+        <select 
+          id="category"
+          [(ngModel)]="transactionCategory"
+        >
           @for(category of categories; track category){
             <option>{{ category }}</option>
           }
@@ -40,6 +27,7 @@
         <input 
           type="number" 
           id="amount"
+          [(ngModel)]="transactionAmount"
         />
       </p>
     </div>
@@ -50,6 +38,7 @@
           name="request" 
           id="description" 
           rows="3" 
+          [(ngModel)]="transactionDescription"
         ></textarea>
       </p>
     </div>

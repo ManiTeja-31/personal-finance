@@ -1,0 +1,35 @@
+table{
+    width: 100%;
+    margin: 2rem auto;
+    padding:  1rem;
+    table-layout: fixed;
+    border-spacing: 1rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table thead{
+    font-size: medium;
+    color: #000000;
+}
+
+table tbody{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: small;
+    color: #000000;
+    
+}
+td, th{
+    padding-left: 20px;
+    text-align: left;
+    overflow-x: hidden;
+    // border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #e6c9c9;
+}
+th {
+    background-color: #04AA6D;
+    color: white;
+  }
