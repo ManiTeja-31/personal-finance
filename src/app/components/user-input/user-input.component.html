@@ -4,7 +4,8 @@
       <p>
         <label>Date</label><br />
         <input 
-          type="date" 
+          type="date"
+          name="date" 
           id="date"
           [(ngModel)]="transactionDate"
         />
@@ -13,6 +14,7 @@
         <label>Category</label><br />
         <select 
           id="category"
+          name="category"
           [(ngModel)]="transactionCategory"
         >
           @for(category of categories; track category){
@@ -25,7 +27,8 @@
       <p>
         <label>Amount</label><br />
         <input 
-          type="number" 
+          type="number"
+          name="number"  
           id="amount"
           [(ngModel)]="transactionAmount"
         />
@@ -44,3 +47,28 @@
     </div>
   </form>
 </div>
+
+
+
+
+
+
+
+
+
+<!-- when you are using ngModel in forms don't forget to give name attribute or else error will be thrown in console 
+Error: NG01352: If ngModel is used within a form tag, either the name attribute must be set or the form
+    control must be defined as 'standalone' in ngModelOptions.
+
+    Example 1: <input [(ngModel)]="person.firstName" name="first">
+    Example 2: <input [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}">
+    at missingNameException (forms.mjs:3944:10)
+    at _NgModel._checkName (forms.mjs:4296:13)
+    at _NgModel._checkForErrors (forms.mjs:4282:10)
+    at _NgModel.ngOnChanges (forms.mjs:4204:10)
+    at _NgModel.rememberChangeHistoryAndInvokeOnChangesHook (core.mjs:4101:14)
+    at callHookInternal (core.mjs:5136:14)
+    at callHook (core.mjs:5167:9)
+    at callHooks (core.mjs:5118:17)
+    at executeInitAndCheckHooks (core.mjs:5068:9)
+    at selectIndexInternal (core.mjs:11029:17) -->

@@ -25,8 +25,8 @@ export class UserInputComponent {
     "Personal Care",
     "Others"];
   selectedCategory:string ='';
-  transactionDate!: Date;
-  transactionCategory!: string;
-  transactionAmount!: number;
-  transactionDescription!: string;
+  transactionDate: Date | undefined;
+  transactionCategory: string | undefined;
+  transactionAmount: number | undefined;
+  transactionDescription: string | undefined;
 }
